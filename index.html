@@ -1,0 +1,2763 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <title>Xavier | Web Developer & Cinematic 9:16 Video Editor</title>
+    <meta
+      name="description"
+      content="Xavier builds fast, hand-coded websites and cinematic 9:16 video edits for creators and brands. Based in Pakistan, working with clients worldwide."
+    />
+    <meta
+      name="keywords"
+      content="Xavier, web developer, video editor, cinematic editing, 9:16 reels, shorts editor, landing page design, portfolio"
+    />
+    <meta name="author" content="Xavier" />
+    <meta name="theme-color" content="#0c0b0a" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Social previews. Add a 1200x630 image at assets/og-cover.jpg -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Xavier | Web Developer & Cinematic 9:16 Video Editor"
+    />
+    <meta
+      property="og:description"
+      content="Hand-coded websites and cinematic vertical video edits, built to hold attention and drive action."
+    />
+    <meta property="og:image" content="assets/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Xavier",
+        "description": "Web development and cinematic 9:16 video editing for creators and brands.",
+        "email": "itxme204@gmail.com",
+        "areaServed": "Worldwide",
+        "address": { "@type": "PostalAddress", "addressCountry": "PK" },
+        "knowsAbout": [
+          "Web development",
+          "Video editing",
+          "Color grading",
+          "Motion design",
+          "Brand identity"
+        ]
+      }
+    </script>
+
+    <!-- Animation guard: content is hidden for intro animations only while JS + libraries are healthy -->
+    <script>
+      (function (d) {
+        var r = d.documentElement;
+        r.classList.remove("no-js");
+        r.classList.add("js");
+        if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          r.classList.add("anim");
+          window.__animGuard = setTimeout(function () {
+            r.classList.remove("anim");
+          }, 6000);
+        }
+      })(document);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="no-scroll" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- PRELOADER (first visit of a session only) -->
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader-inner">
+        <div class="preloader-logo">XAVIER<span>.</span></div>
+        <div class="preloader-tagline">Web Developer & Cinematic Editor</div>
+        <div class="preloader-bar-wrap">
+          <div class="preloader-bar" id="preloader-bar"></div>
+        </div>
+        <div class="preloader-count" id="preloader-count">0%</div>
+      </div>
+    </div>
+
+    <!-- CURSOR + OVERLAYS -->
+    <div id="cursor" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+    <div id="cursor-label" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div id="progress-bar" aria-hidden="true"></div>
+
+    <!-- NAVIGATION -->
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+      <a href="#top" class="nav-logo" aria-label="Xavier - Home"
+        >XAVIER<span>.</span></a
+      >
+
+      <div class="nav-links">
+        <a href="Pages/about.html" class="nav-link" data-text="About">About</a>
+        <a href="Pages/work.html" class="nav-link" data-text="Work">Work</a>
+        <a href="Pages/services.html" class="nav-link" data-text="Services"
+          >Services</a
+        >
+        <a href="Pages/clients.html" class="nav-link" data-text="Clients"
+          >Clients</a
+        >
+        <a href="Pages/contact.html" class="nav-link" data-text="Contact"
+          >Contact</a
+        >
+        <a href="Pages/contact.html?intent=hire" class="nav-cta magnetic"
+          ><span>Hire me</span></a
+        >
+      </div>
+
+      <button
+        class="nav-hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <a href="Pages/about.html" class="mobile-menu-link">About</a>
+      <a href="Pages/work.html" class="mobile-menu-link">Work</a>
+      <a href="Pages/services.html" class="mobile-menu-link">Services</a>
+      <a href="Pages/clients.html" class="mobile-menu-link">Clients</a>
+      <a href="Pages/process.html" class="mobile-menu-link">Process</a>
+      <a href="Pages/contact.html" class="mobile-menu-link">Contact</a>
+      <a href="mailto:hello@xavier.com" class="mobile-menu-mail"
+        >hello@xavier.com</a
+      >
+    </div>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="hero" aria-label="Introduction">
+        <div class="hero-light" aria-hidden="true"></div>
+
+        <div class="hero-grid">
+          <div class="hero-main">
+            <p class="hero-status">
+              <span class="rec-dot" aria-hidden="true"></span>Available for
+              projects in 2026
+            </p>
+
+            <h1 class="hero-title">
+              <span class="hero-title-line"
+                ><span class="line-inner">Crafting</span></span
+              >
+              <span class="hero-title-line outline"
+                ><span class="line-inner">Cinematic</span></span
+              >
+              <span class="hero-title-line"
+                ><span class="line-inner">Realities.</span></span
+              >
+            </h1>
+
+            <div class="hero-bottom">
+              <p class="hero-desc">
+                <strong>Xavier</strong> builds fast, hand-coded websites and
+                cinematic 9:16 edits that hold attention, earn trust, and turn
+                viewers into clients.
+              </p>
+              <div class="hero-actions">
+                <a href="Pages/work.html" class="btn-primary magnetic">
+                  <span>View work</span>
+                  <svg
+                    class="btn-icon"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M2 12L12 2M12 2H5M12 2V9" />
+                  </svg>
+                </a>
+                <a href="Pages/contact.html" class="btn-secondary magnetic"
+                  ><span>Get in touch</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 9:16 viewfinder: cycles through recent clips -->
+          <aside class="hero-frame" aria-hidden="true">
+            <div class="hero-frame-media">
+              <img
+                class="is-active"
+                data-title="Urban Noir"
+                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                width="720"
+                height="1280"
+                alt=""
+                fetchpriority="high"
+              />
+              <img
+                data-title="The Peak"
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                width="720"
+                height="1280"
+                alt=""
+                loading="lazy"
+              />
+              <img
+                data-title="Neon Pulse"
+                src="https://images.unsplash.com/photo-1517935706615-2717063c2225?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                width="720"
+                height="1280"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="hero-frame-hud">
+              <span class="hud-rec"><i></i>REC</span>
+              <span class="hud-tc" id="hero-timecode">00:00:00:00</span>
+              <span class="hud-title" id="hero-clip">Urban Noir</span>
+              <span class="hud-ratio">9:16</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <span class="scroll-text">Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- TICKER: services -->
+      <div class="ticker-section" aria-hidden="true">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <span class="ticker-item">Web Architecture</span>
+            <span class="ticker-item">Cinematic Editing</span>
+            <span class="ticker-item">9:16 Mastery</span>
+            <span class="ticker-item">Color Grading</span>
+            <span class="ticker-item">Motion Design</span>
+            <span class="ticker-item">Visual Branding</span>
+            <span class="ticker-item">UI/UX Design</span>
+            <span class="ticker-item">Performance Web</span>
+            <span class="ticker-item">Storytelling</span>
+            <span class="ticker-item">Sound Design</span>
+          </div>
+          <div class="ticker-group">
+            <span class="ticker-item">Web Architecture</span>
+            <span class="ticker-item">Cinematic Editing</span>
+            <span class="ticker-item">9:16 Mastery</span>
+            <span class="ticker-item">Color Grading</span>
+            <span class="ticker-item">Motion Design</span>
+            <span class="ticker-item">Visual Branding</span>
+            <span class="ticker-item">UI/UX Design</span>
+            <span class="ticker-item">Performance Web</span>
+            <span class="ticker-item">Storytelling</span>
+            <span class="ticker-item">Sound Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MANIFESTO -->
+      <section id="manifesto" class="manifesto" aria-label="Manifesto">
+        <p class="manifesto-text" data-split-words>
+          Most portfolios list skills. This one makes a promise: every site I
+          build and every video I cut has one job, to keep the right person
+          watching and make them act. Fast to load. Hard to scroll past. Made by
+          one person who actually answers.
+        </p>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section" aria-label="About Xavier">
+        <div class="about-grid">
+          <div class="about-left">
+            <div class="about-portrait">
+              <img
+                src="assets/xavier.jpeg"
+                alt="Portrait of Xavier, web developer and cinematic video editor"
+                width="800"
+                height="1000"
+                loading="lazy"
+              />
+              <div class="about-portrait-border"></div>
+              <div class="about-portrait-label">Digital Architect</div>
+              <div class="about-portrait-year">2026</div>
+
+              <div class="about-badge" aria-hidden="true">
+                <svg viewBox="0 0 120 120" class="about-badge-ring">
+                  <defs>
+                    <path
+                      id="badge-path"
+                      d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                    />
+                  </defs>
+                  <text>
+                    <textPath href="#badge-path" startOffset="0">
+                      Available worldwide - Based in Pakistan -
+                    </textPath>
+                  </text>
+                </svg>
+                <span class="about-badge-core"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <h2 class="about-intro reveal-up">
+              I don't just build websites and edit videos. I craft digital
+              experiences that breathe, move, and leave a mark.
+            </h2>
+
+            <div class="about-body reveal-up">
+              <p>
+                With over <strong>5 years of deep craft</strong> in web
+                development and cinematic video editing, I've worked with
+                brands, creators, and visionaries who refuse to settle. My
+                philosophy is simple:
+                <strong
+                  >every project deserves the same obsessive attention to
+                  detail</strong
+                >
+                that separates good from extraordinary.
+              </p>
+              <p>
+                My web work is built on clean, performant code that loads fast,
+                looks sharp, and converts visitors into clients. My editing
+                focuses on
+                <strong>emotional storytelling through precise pacing</strong>,
+                cinematic color grading, and the visual rhythm that keeps eyes
+                locked on screen.
+              </p>
+              <p>
+                I specialize in the <strong>9:16 vertical format</strong>, built
+                for retention and impact on YouTube Shorts, Instagram Reels, and
+                TikTok.
+              </p>
+            </div>
+
+            <ul class="about-highlights reveal-up">
+              <li class="about-highlight-item">Based in Pakistan</li>
+              <li class="about-highlight-item">Available worldwide</li>
+              <li class="about-highlight-item">5+ years experience</li>
+              <li class="about-highlight-item">150+ projects completed</li>
+              <li class="about-highlight-item">Cinematic specialist</li>
+              <li class="about-highlight-item">Performance-first dev</li>
+              <li class="about-highlight-item">Fast turnaround</li>
+              <li class="about-highlight-item">Revision-friendly</li>
+            </ul>
+
+            <div class="about-actions reveal-up">
+              <a href="Pages/work.html" class="btn-primary magnetic">
+                <span>Explore work</span>
+                <svg
+                  class="btn-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" />
+                </svg>
+              </a>
+              <a href="Pages/contact.html" class="btn-secondary magnetic"
+                ><span>Let's talk</span></a
+              >
+            </div>
+
+            <div class="about-signature reveal-up" aria-hidden="true">
+              Xavier
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-section" aria-label="Key statistics">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number"
+              ><span class="count-up" data-target="150">0</span
+              ><sup>+</sup></span
+            >
+            <span class="stat-label">Projects delivered</span>
+            <p class="stat-desc">
+              Across web development, video editing, and branding
+            </p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"
+              ><span class="count-up" data-target="80">0</span
+              ><sup>+</sup></span
+            >
+            <span class="stat-label">Satisfied clients</span>
+            <p class="stat-desc">From solo creators to global brands</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"
+              ><span class="count-up" data-target="50">0</span
+              ><sup>M+</sup></span
+            >
+            <span class="stat-label">Views generated</span>
+            <p class="stat-desc">
+              Cumulative views on edited content across platforms
+            </p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"
+              ><span class="count-up" data-target="5">0</span></span
+            >
+            <span class="stat-label">Years of craft</span>
+            <p class="stat-desc">Refining the work since 2021</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOWREEL -->
+      <section id="showreel" class="reel-section" aria-label="Showreel">
+        <div class="section-header reel-header">
+          <h2 class="section-title reveal-up">The work<br />speaks.</h2>
+          <p class="section-subtitle reveal-up">
+            A curated cut of cinematic edits, web experiences, and visual
+            stories that define how I work.
+          </p>
+        </div>
+
+        <div
+          class="reel-container"
+          id="reel-container"
+          data-cursor="Play"
+          data-video="assets/codewithxavier.mp4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&amp;w=1600&amp;h=900&amp;fit=crop"
+            alt="Still frame from the Xavier 2026 showreel"
+            class="reel-thumbnail"
+            width="1600"
+            height="900"
+            loading="lazy"
+          />
+          <div class="reel-overlay">
+            <button class="reel-play-btn magnetic" aria-label="Play showreel">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </button>
+          </div>
+          <span class="reel-label">2026 showreel</span>
+          <span class="reel-duration">03:17</span>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="section work-section" aria-label="Portfolio">
+        <div class="work-head">
+          <div class="section-header">
+            <h2 class="section-title reveal-up">Recent<br />clips.</h2>
+            <p class="section-subtitle reveal-up">
+              Every frame is intentional. Every cut is calculated. Cinematic
+              storytelling, built for the vertical screen.
+            </p>
+          </div>
+
+          <div class="work-controls reveal-up">
+            <div class="work-filter-bar" role="group" aria-label="Filter work">
+              <button
+                class="filter-btn active"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                All work
+              </button>
+              <button
+                class="filter-btn"
+                data-filter="video"
+                aria-pressed="false"
+              >
+                Video editing
+              </button>
+              <button class="filter-btn" data-filter="web" aria-pressed="false">
+                Web dev
+              </button>
+              <button
+                class="filter-btn"
+                data-filter="branding"
+                aria-pressed="false"
+              >
+                Branding
+              </button>
+              <button
+                class="filter-btn"
+                data-filter="reels"
+                aria-pressed="false"
+              >
+                Reels
+              </button>
+            </div>
+            <div class="rail-nav">
+              <button
+                class="rail-arrow"
+                id="rail-prev"
+                aria-label="Scroll work left"
+              >
+                <svg viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button
+                class="rail-arrow"
+                id="rail-next"
+                aria-label="Scroll work right"
+              >
+                <svg viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-rail-wrap reveal-up">
+          <div
+            class="work-rail work-grid"
+            id="work-rail"
+            tabindex="0"
+            role="region"
+            aria-label="Selected work, scrollable"
+            data-cursor-drag="Drag"
+          >
+            <a
+              href="Pages/work-urban-noir.html"
+              class="work-item"
+              data-category="video"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Urban Noir - cinematic edit"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Cinematic edit</div>
+                <h3 class="work-title">Urban Noir</h3>
+                <p class="work-desc">
+                  Realistic color grading with high-contrast shadows and
+                  cinematic grain.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-the-peak.html"
+              class="work-item"
+              data-category="video"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="The Peak - narrative edit"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Narrative edit</div>
+                <h3 class="work-title">The Peak</h3>
+                <p class="work-desc">
+                  High-impact narrative structure with precise pacing and
+                  emotional beats.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-grit-and-soul.html"
+              class="work-item"
+              data-category="video reels"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Grit &amp; Soul - cinematic reel"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Cinematic reel</div>
+                <h3 class="work-title">Grit &amp; Soul</h3>
+                <p class="work-desc">
+                  Raw authenticity meets cinematic pacing. Built for maximum
+                  retention.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-neon-pulse.html"
+              class="work-item"
+              data-category="video reels"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1517935706615-2717063c2225?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Neon Pulse - music visual"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Music visual</div>
+                <h3 class="work-title">Neon Pulse</h3>
+                <p class="work-desc">
+                  Vibrant music-sync editing with rhythmic cuts and beat drops.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-midnight-drama.html"
+              class="work-item"
+              data-category="video"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Midnight Drama - drama edit"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Drama edit</div>
+                <h3 class="work-title">Midnight Drama</h3>
+                <p class="work-desc">
+                  Tension-driven cuts and moody atmosphere for maximum emotional
+                  impact.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-golden-hour.html"
+              class="work-item"
+              data-category="video"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1524169113253-c6ba17570d39?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Golden Hour - travel edit"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Travel edit</div>
+                <h3 class="work-title">Golden Hour</h3>
+                <p class="work-desc">
+                  Warm tones and sweeping landscapes with editorial-grade color
+                  science.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-digital-workspace.html"
+              class="work-item"
+              data-category="web"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Digital Workspace - SaaS interface"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Web development</div>
+                <h3 class="work-title">Digital Workspace</h3>
+                <p class="work-desc">
+                  Clean-coded, high-performance SaaS interface. Zero bloat, pure
+                  power.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-brand-universe.html"
+              class="work-item"
+              data-category="branding"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Brand Universe - brand identity"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Visual branding</div>
+                <h3 class="work-title">Brand Universe</h3>
+                <p class="work-desc">
+                  Cohesive visual identity, from logo to full brand system.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-adrenaline-rush.html"
+              class="work-item"
+              data-category="video reels"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Adrenaline Rush - sports edit"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Sports edit</div>
+                <h3 class="work-title">Adrenaline Rush</h3>
+                <p class="work-desc">
+                  Fast-paced sports edit with kinetic energy and precision sync.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-brew-n-bean.html"
+              class="work-item"
+              data-category="web"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Brew N Bean - coffee website"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">Web development</div>
+                <h3 class="work-title">Brew N Bean</h3>
+                <p class="work-desc">
+                  Premium coffee website with modern design and seamless user
+                  experience.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="Pages/work-lumieres-store.html"
+              class="work-item"
+              data-category="web"
+              data-cursor="View"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&amp;w=720&amp;h=1280&amp;fit=crop"
+                alt="Lumieres Store - e-commerce"
+                width="720"
+                height="1280"
+                loading="lazy"
+                draggable="false"
+              />
+              <div class="work-overlay"></div>
+              <div class="work-info">
+                <div class="work-category">E-commerce</div>
+                <h3 class="work-title">Lumieres Store</h3>
+                <p class="work-desc">
+                  Elegant e-commerce platform with curated product showcase and
+                  smooth checkout.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="rail-progress" aria-hidden="true">
+            <span id="rail-progress-bar"></span>
+          </div>
+        </div>
+
+        <div class="work-cta-row">
+          <a href="Pages/contact.html" class="btn-primary magnetic">
+            <span>Start your project</span>
+            <svg
+              class="btn-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M2 12L12 2M12 2H5M12 2V9" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- TICKER: tools -->
+      <div class="ticker-section marquee-reverse" aria-hidden="true">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <span class="ticker-item">Adobe Premiere Pro</span>
+            <span class="ticker-item">DaVinci Resolve</span>
+            <span class="ticker-item">After Effects</span>
+            <span class="ticker-item">Figma</span>
+            <span class="ticker-item">VS Code</span>
+            <span class="ticker-item">React.js</span>
+            <span class="ticker-item">GSAP</span>
+            <span class="ticker-item">Photoshop</span>
+            <span class="ticker-item">Illustrator</span>
+            <span class="ticker-item">CapCut Pro</span>
+            <span class="ticker-item">Blender</span>
+            <span class="ticker-item">Framer</span>
+          </div>
+          <div class="ticker-group">
+            <span class="ticker-item">Adobe Premiere Pro</span>
+            <span class="ticker-item">DaVinci Resolve</span>
+            <span class="ticker-item">After Effects</span>
+            <span class="ticker-item">Figma</span>
+            <span class="ticker-item">VS Code</span>
+            <span class="ticker-item">React.js</span>
+            <span class="ticker-item">GSAP</span>
+            <span class="ticker-item">Photoshop</span>
+            <span class="ticker-item">Illustrator</span>
+            <span class="ticker-item">CapCut Pro</span>
+            <span class="ticker-item">Blender</span>
+            <span class="ticker-item">Framer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <section id="process" class="section" aria-label="Work process">
+        <div class="process-grid">
+          <div class="process-left">
+            <h2 class="section-title">My creative<br />process.</h2>
+            <p class="section-subtitle">
+              A refined workflow that makes every deliverable land on time, with
+              no surprises.
+            </p>
+            <div class="process-cta">
+              <a href="Pages/contact.html" class="btn-primary magnetic"
+                ><span>Start a project</span></a
+              >
+            </div>
+          </div>
+
+          <ol class="process-steps">
+            <li class="process-step reveal-up">
+              <div class="process-step-num">01</div>
+              <div class="process-step-content">
+                <h3 class="process-step-title">Discovery &amp; brief</h3>
+                <p class="process-step-desc">
+                  We start with a deep-dive consultation to understand your
+                  vision, brand, audience, and goals. No assumptions, just clear
+                  understanding. This phase defines the entire project.
+                </p>
+                <div class="process-step-tools">
+                  <span class="process-tool-tag">Notion</span
+                  ><span class="process-tool-tag">Miro</span
+                  ><span class="process-tool-tag">Google Meet</span
+                  ><span class="process-tool-tag">Brief doc</span>
+                </div>
+              </div>
+            </li>
+            <li class="process-step reveal-up">
+              <div class="process-step-num">02</div>
+              <div class="process-step-content">
+                <h3 class="process-step-title">Concept &amp; direction</h3>
+                <p class="process-step-desc">
+                  Before touching a frame or a line of code, I set a clear
+                  creative direction: moodboards, wireframes, reference edits.
+                  Surprises are for audience reveals, not client deliveries.
+                </p>
+                <div class="process-step-tools">
+                  <span class="process-tool-tag">Figma</span
+                  ><span class="process-tool-tag">Moodboard</span
+                  ><span class="process-tool-tag">References</span
+                  ><span class="process-tool-tag">Storyboard</span>
+                </div>
+              </div>
+            </li>
+            <li class="process-step reveal-up">
+              <div class="process-step-num">03</div>
+              <div class="process-step-content">
+                <h3 class="process-step-title">Production &amp; craft</h3>
+                <p class="process-step-desc">
+                  Where obsession meets discipline. For video: precise cutting,
+                  cinematic color grading, sound design. For web: clean,
+                  pixel-perfect code with performance in mind at every level. No
+                  shortcuts, no templates.
+                </p>
+                <div class="process-step-tools">
+                  <span class="process-tool-tag">Premiere Pro</span
+                  ><span class="process-tool-tag">DaVinci</span
+                  ><span class="process-tool-tag">VS Code</span
+                  ><span class="process-tool-tag">GSAP</span>
+                </div>
+              </div>
+            </li>
+            <li class="process-step reveal-up">
+              <div class="process-step-num">04</div>
+              <div class="process-step-content">
+                <h3 class="process-step-title">Review &amp; refine</h3>
+                <p class="process-step-desc">
+                  Structured revision rounds with clear feedback loops. I don't
+                  just apply changes, I improve on them. Delivered when it's
+                  right, not just when it's done.
+                </p>
+                <div class="process-step-tools">
+                  <span class="process-tool-tag">Frame.io</span
+                  ><span class="process-tool-tag">Loom</span
+                  ><span class="process-tool-tag">Feedback docs</span>
+                </div>
+              </div>
+            </li>
+            <li class="process-step reveal-up">
+              <div class="process-step-num">05</div>
+              <div class="process-step-content">
+                <h3 class="process-step-title">Delivery &amp; support</h3>
+                <p class="process-step-desc">
+                  Final files packaged for your use case. Video: optimized
+                  exports for every platform. Web: deployed, tested, and
+                  documented. Post-launch support to make sure everything
+                  performs.
+                </p>
+                <div class="process-step-tools">
+                  <span class="process-tool-tag">WeTransfer</span
+                  ><span class="process-tool-tag">GitHub</span
+                  ><span class="process-tool-tag">Vercel</span
+                  ><span class="process-tool-tag">Documentation</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section" aria-label="Services">
+        <div class="services-layout">
+          <div class="services-left">
+            <h2 class="section-title">What I<br />do best.</h2>
+            <p class="services-desc-text">
+              A focused set of premium services, each executed to the highest
+              standard. I don't offer everything. I offer excellence in what I
+              do.
+            </p>
+            <blockquote class="services-highlight">
+              <p class="services-highlight-text">
+                Craft over quantity. Every project gets my full attention and
+                years of refined expertise.
+              </p>
+            </blockquote>
+            <div class="services-cta">
+              <a href="Pages/contact.html" class="btn-primary magnetic"
+                ><span>Discuss a project</span></a
+              >
+            </div>
+          </div>
+
+          <div class="services-list">
+            <article class="service-row reveal-up">
+              <div class="service-main">
+                <h3 class="service-title">Web Architecture</h3>
+                <p class="service-desc">
+                  Custom-coded, high-performance websites and web apps. Semantic
+                  HTML, modern CSS, vanilla JS or React. No bloat, no
+                  page-builders, just clean, fast code that ranks, converts, and
+                  impresses.
+                </p>
+                <div class="service-tags">
+                  <span class="service-tag">HTML/CSS</span
+                  ><span class="service-tag">JavaScript</span
+                  ><span class="service-tag">React</span
+                  ><span class="service-tag">GSAP</span
+                  ><span class="service-tag">Performance</span
+                  ><span class="service-tag">SEO</span>
+                </div>
+              </div>
+              <div class="service-meta">
+                <span class="service-price">$500+</span>
+                <span class="service-timeline">7-14 days</span>
+                <div class="service-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-row reveal-up">
+              <div class="service-main">
+                <h3 class="service-title">Cinematic 9:16</h3>
+                <p class="service-desc">
+                  Retention-optimized video editing for YouTube Shorts,
+                  Instagram Reels, and TikTok. Cinematic color grading, precise
+                  pacing, and professional sound design, built to stop scrolls
+                  and earn replays.
+                </p>
+                <div class="service-tags">
+                  <span class="service-tag">Premiere Pro</span
+                  ><span class="service-tag">DaVinci</span
+                  ><span class="service-tag">Color grade</span
+                  ><span class="service-tag">Sound design</span
+                  ><span class="service-tag">Pacing</span>
+                </div>
+              </div>
+              <div class="service-meta">
+                <span class="service-price">$80+</span>
+                <span class="service-timeline">2-5 days</span>
+                <div class="service-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-row reveal-up">
+              <div class="service-main">
+                <h3 class="service-title">Visual Branding</h3>
+                <p class="service-desc">
+                  Thumbnail design, channel art, brand identity, and visual
+                  systems that stand out in any feed. Distinct, memorable, and
+                  made by hand, with no generic AI aesthetics.
+                </p>
+                <div class="service-tags">
+                  <span class="service-tag">Photoshop</span
+                  ><span class="service-tag">Illustrator</span
+                  ><span class="service-tag">Figma</span
+                  ><span class="service-tag">Brand system</span
+                  ><span class="service-tag">Typography</span>
+                </div>
+              </div>
+              <div class="service-meta">
+                <span class="service-price">$150+</span>
+                <span class="service-timeline">3-7 days</span>
+                <div class="service-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-row reveal-up">
+              <div class="service-main">
+                <h3 class="service-title">Motion Design</h3>
+                <p class="service-desc">
+                  Animated intros, transitions, lower thirds, and motion
+                  graphics that elevate any video. From subtle micro-animations
+                  to full-sequence motion design, all with a cinematic
+                  sensibility.
+                </p>
+                <div class="service-tags">
+                  <span class="service-tag">After Effects</span
+                  ><span class="service-tag">Motion Bro</span
+                  ><span class="service-tag">Trapcode</span
+                  ><span class="service-tag">Animations</span>
+                </div>
+              </div>
+              <div class="service-meta">
+                <span class="service-price">$200+</span>
+                <span class="service-timeline">4-8 days</span>
+                <div class="service-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-row reveal-up">
+              <div class="service-main">
+                <h3 class="service-title">Landing Page Design</h3>
+                <p class="service-desc">
+                  High-converting single-page experiences built to capture
+                  attention and drive action. Every element is placed with
+                  conversion in mind and coded to load in under 2 seconds.
+                </p>
+                <div class="service-tags">
+                  <span class="service-tag">UI design</span
+                  ><span class="service-tag">Conversion</span
+                  ><span class="service-tag">A/B ready</span
+                  ><span class="service-tag">Analytics</span>
+                </div>
+              </div>
+              <div class="service-meta">
+                <span class="service-price">$300+</span>
+                <span class="service-timeline">5-10 days</span>
+                <div class="service-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-row reveal-up">
+              <div class="service-main">
+                <h3 class="service-title">Content Strategy</h3>
+                <p class="service-desc">
+                  Editorial calendar planning, content batching, and
+                  platform-specific optimization. Know what to post, when to
+                  post it, and how to format it for both algorithms and people.
+                </p>
+                <div class="service-tags">
+                  <span class="service-tag">YouTube</span
+                  ><span class="service-tag">Instagram</span
+                  ><span class="service-tag">TikTok</span
+                  ><span class="service-tag">Strategy</span>
+                </div>
+              </div>
+              <div class="service-meta">
+                <span class="service-price">$250+</span>
+                <span class="service-timeline">Ongoing</span>
+                <div class="service-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section id="stack" class="stack-section" aria-label="Technology stack">
+        <div class="section-header">
+          <h2 class="section-title reveal-up">The tools<br />I trust.</h2>
+          <p class="section-subtitle reveal-up">
+            Industry-standard tools, chosen for quality, not convenience.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-category reveal-up">
+            <h3 class="stack-cat-title">Video editing</h3>
+            <ul class="stack-items">
+              <li class="stack-item">
+                <span class="stack-item-name">Adobe Premiere Pro</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">DaVinci Resolve</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">After Effects</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 4"
+                  role="img"
+                  aria-label="4 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">CapCut Pro</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Audition</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 3"
+                  role="img"
+                  aria-label="3 out of 5"
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="stack-category reveal-up">
+            <h3 class="stack-cat-title">Web development</h3>
+            <ul class="stack-items">
+              <li class="stack-item">
+                <span class="stack-item-name">HTML5 / CSS3</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">JavaScript / ES6+</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 4"
+                  role="img"
+                  aria-label="4 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">React.js</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 4"
+                  role="img"
+                  aria-label="4 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">GSAP animations</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Node.js</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 3"
+                  role="img"
+                  aria-label="3 out of 5"
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="stack-category reveal-up">
+            <h3 class="stack-cat-title">Design</h3>
+            <ul class="stack-items">
+              <li class="stack-item">
+                <span class="stack-item-name">Figma</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Adobe Photoshop</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Illustrator</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 4"
+                  role="img"
+                  aria-label="4 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Framer</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 3"
+                  role="img"
+                  aria-label="3 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Blender 3D</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 2"
+                  role="img"
+                  aria-label="2 out of 5"
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="stack-category reveal-up">
+            <h3 class="stack-cat-title">Workflow</h3>
+            <ul class="stack-items">
+              <li class="stack-item">
+                <span class="stack-item-name">Git / GitHub</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 4"
+                  role="img"
+                  aria-label="4 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Vercel / Netlify</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Notion</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">Frame.io</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 4"
+                  role="img"
+                  aria-label="4 out of 5"
+                ></span>
+              </li>
+              <li class="stack-item">
+                <span class="stack-item-name">VS Code</span
+                ><span
+                  class="stack-item-level"
+                  style="--lv: 5"
+                  role="img"
+                  aria-label="5 out of 5"
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section class="awards-section" aria-label="Awards and recognition">
+        <div class="section-header">
+          <h2 class="section-title reveal-up">Recognition.</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award-item reveal-up">
+            <div class="award-year">2025</div>
+            <div class="award-title">Best Video Editor of the Year</div>
+            <div class="award-org">Freelancer Excellence Awards</div>
+          </div>
+          <div class="award-item reveal-up">
+            <div class="award-year">2025</div>
+            <div class="award-title">Top Rated Web Developer</div>
+            <div class="award-org">Fiverr Pro Platform</div>
+          </div>
+          <div class="award-item reveal-up">
+            <div class="award-year">2024</div>
+            <div class="award-title">Cinematic Editing Award</div>
+            <div class="award-org">Content Creator Summit</div>
+          </div>
+          <div class="award-item reveal-up">
+            <div class="award-year">2024</div>
+            <div class="award-title">Best Portfolio Website</div>
+            <div class="award-org">CSS Design Awards</div>
+          </div>
+          <div class="award-item reveal-up">
+            <div class="award-year">2023</div>
+            <div class="award-title">Excellence in Visual Design</div>
+            <div class="award-org">Awwwards Honorable Mention</div>
+          </div>
+          <div class="award-item reveal-up">
+            <div class="award-year">2023</div>
+            <div class="award-title">Rising Star Creator</div>
+            <div class="award-org">Digital Creators Guild</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section
+        id="testimonials"
+        class="section"
+        aria-label="Client testimonials"
+      >
+        <div class="section-header">
+          <h2 class="section-title reveal-up">What they<br />say.</h2>
+        </div>
+
+        <div class="testimonials-slider reveal-up">
+          <div class="testimonials-viewport">
+            <div class="testimonials-track" id="testimonials-track">
+              <figure class="testimonial-slide">
+                <div class="testimonial-content">
+                  <span class="testimonial-quote-icon" aria-hidden="true"
+                    >&ldquo;</span
+                  >
+                  <blockquote class="testimonial-text">
+                    Xavier transformed our brand's visual presence completely.
+                    The website he built doesn't just look incredible, it
+                    converts. Our leads went up 340% in the first month alone.
+                    This is what elite craftsmanship looks like.
+                  </blockquote>
+                  <figcaption class="testimonial-author">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&amp;w=100&amp;h=100&amp;fit=crop"
+                        alt="Marcus Reid"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-author-info">
+                      <div class="testimonial-name">Marcus Reid</div>
+                      <div class="testimonial-role">
+                        CEO, Apex Digital - Dubai
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial-slide">
+                <div class="testimonial-content">
+                  <span class="testimonial-quote-icon" aria-hidden="true"
+                    >&ldquo;</span
+                  >
+                  <blockquote class="testimonial-text">
+                    The 9:16 edits Xavier produces are genuinely cinematic. My
+                    YouTube Shorts went from 10K average views to over 2M. The
+                    color grading, the pacing, the music sync, everything is
+                    dialed in.
+                  </blockquote>
+                  <figcaption class="testimonial-author">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&amp;w=100&amp;h=100&amp;fit=crop"
+                        alt="Sophia Chen"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-author-info">
+                      <div class="testimonial-name">Sophia Chen</div>
+                      <div class="testimonial-role">
+                        Content Creator - 4.2M Subscribers
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial-slide">
+                <div class="testimonial-content">
+                  <span class="testimonial-quote-icon" aria-hidden="true"
+                    >&ldquo;</span
+                  >
+                  <blockquote class="testimonial-text">
+                    I've worked with many developers and editors globally.
+                    Xavier sits in a different league. His attention to detail,
+                    communication, and ability to execute beyond the brief is
+                    something I've rarely encountered. Hire him before your
+                    competitors do.
+                  </blockquote>
+                  <figcaption class="testimonial-author">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&amp;w=100&amp;h=100&amp;fit=crop"
+                        alt="Jordan Blake"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-author-info">
+                      <div class="testimonial-name">Jordan Blake</div>
+                      <div class="testimonial-role">
+                        Founder, NovaBrand Studio - London
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial-slide">
+                <div class="testimonial-content">
+                  <span class="testimonial-quote-icon" aria-hidden="true"
+                    >&ldquo;</span
+                  >
+                  <blockquote class="testimonial-text">
+                    Our product launch video edited by Xavier went viral with
+                    8.7M views in 72 hours. The cinematic quality made our SaaS
+                    product look like a blockbuster. Every detail, the sound,
+                    the timing, the visuals, was flawless.
+                  </blockquote>
+                  <figcaption class="testimonial-author">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=100&amp;h=100&amp;fit=crop"
+                        alt="Priya Sharma"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-author-info">
+                      <div class="testimonial-name">Priya Sharma</div>
+                      <div class="testimonial-role">
+                        CMO, TechFlow Inc. - San Francisco
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial-slide">
+                <div class="testimonial-content">
+                  <span class="testimonial-quote-icon" aria-hidden="true"
+                    >&ldquo;</span
+                  >
+                  <blockquote class="testimonial-text">
+                    Xavier redesigned my entire digital presence: website,
+                    thumbnails, channel art, everything. The cohesive visual
+                    system he created tripled my channel's subscriber growth
+                    rate. He doesn't just design, he strategizes.
+                  </blockquote>
+                  <figcaption class="testimonial-author">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&amp;w=100&amp;h=100&amp;fit=crop"
+                        alt="Kai Tanaka"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-author-info">
+                      <div class="testimonial-name">Kai Tanaka</div>
+                      <div class="testimonial-role">
+                        Finance YouTuber - 1.8M Subscribers
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+
+          <div class="testimonials-nav">
+            <button
+              class="testimonial-arrow"
+              id="prev-testimonial"
+              aria-label="Previous testimonial"
+            >
+              <svg viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <div
+              class="testimonial-dots"
+              role="group"
+              aria-label="Choose testimonial"
+            >
+              <button
+                class="testimonial-dot active"
+                aria-label="Testimonial 1"
+              ></button>
+              <button
+                class="testimonial-dot"
+                aria-label="Testimonial 2"
+              ></button>
+              <button
+                class="testimonial-dot"
+                aria-label="Testimonial 3"
+              ></button>
+              <button
+                class="testimonial-dot"
+                aria-label="Testimonial 4"
+              ></button>
+              <button
+                class="testimonial-dot"
+                aria-label="Testimonial 5"
+              ></button>
+            </div>
+            <button
+              class="testimonial-arrow"
+              id="next-testimonial"
+              aria-label="Next testimonial"
+            >
+              <svg viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES -->
+      <section class="case-section" aria-label="Case studies">
+        <div class="section-header">
+          <h2 class="section-title reveal-up">Case<br />studies.</h2>
+          <p class="section-subtitle reveal-up">
+            The thinking behind the work. Real projects, real results, real
+            strategy.
+          </p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-item case-feature reveal-up">
+            <div class="case-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=1600&amp;h=1000&amp;fit=crop"
+                alt="Apex Digital rebrand dashboard"
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <div class="case-category">Web development + branding</div>
+              <h3 class="case-title">Apex Digital: full brand rebuild</h3>
+              <p class="case-desc">
+                A complete digital transformation for a Dubai-based digital
+                agency: new website architecture, full brand system, and a
+                motion design package, including a custom CMS, animation system,
+                and conversion-optimized landing pages.
+              </p>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <span class="case-metric-value">340%</span
+                  ><span class="case-metric-label">Lead increase</span>
+                </div>
+                <div class="case-metric">
+                  <span class="case-metric-value">1.2s</span
+                  ><span class="case-metric-label">Load time</span>
+                </div>
+                <div class="case-metric">
+                  <span class="case-metric-value">98</span
+                  ><span class="case-metric-label">Lighthouse score</span>
+                </div>
+              </div>
+              <a
+                href="Pages/case-apex-digital-full-brand-rebuild.html"
+                class="case-link"
+                >View full case study
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </article>
+
+          <article class="case-item reveal-up">
+            <div class="case-image">
+              <img
+                src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&amp;w=900&amp;h=600&amp;fit=crop"
+                alt="Viral shorts content series"
+                width="900"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <div class="case-category">Cinematic video editing</div>
+              <h3 class="case-title">Sophia Chen: viral Shorts series</h3>
+              <p class="case-desc">
+                A complete 9:16 editing system for a major creator: cinematic
+                templates, color palettes, and sound design frameworks used
+                across 120+ videos.
+              </p>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <span class="case-metric-value">2M+</span
+                  ><span class="case-metric-label">Avg views</span>
+                </div>
+                <div class="case-metric">
+                  <span class="case-metric-value">120+</span
+                  ><span class="case-metric-label">Videos edited</span>
+                </div>
+              </div>
+              <a
+                href="Pages/case-sophia-chen-viral-shorts-series.html"
+                class="case-link"
+                >View case study
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </article>
+
+          <article class="case-item reveal-up">
+            <div class="case-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&amp;w=900&amp;h=600&amp;fit=crop"
+                alt="TechFlow product launch analytics"
+                width="900"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+            <div class="case-body">
+              <div class="case-category">Product launch video</div>
+              <h3 class="case-title">TechFlow: 8.7M-view product launch</h3>
+              <p class="case-desc">
+                A cinematic product reveal for a Series B SaaS company,
+                combining live-action footage with motion graphics and precision
+                pacing built for viral reach.
+              </p>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <span class="case-metric-value">8.7M</span
+                  ><span class="case-metric-label">Total views</span>
+                </div>
+                <div class="case-metric">
+                  <span class="case-metric-value">72h</span
+                  ><span class="case-metric-label">To viral</span>
+                </div>
+              </div>
+              <a
+                href="Pages/case-techflow-product-launch.html"
+                class="case-link"
+                >View case study
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <section id="blog" class="blog-section" aria-label="Blog and insights">
+        <div class="section-header">
+          <h2 class="section-title reveal-up">From the<br />studio.</h2>
+          <p class="section-subtitle reveal-up">
+            Notes on craft, technique, and making work that lasts.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-item reveal-up">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&amp;w=800&amp;h=520&amp;fit=crop"
+                alt="Cinematic vertical video on set"
+                width="800"
+                height="520"
+                loading="lazy"
+              />
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-cat">Video editing</span
+                ><span class="blog-date">Apr 2026</span>
+              </div>
+              <h3 class="blog-title">
+                The Art of Cinematic 9:16: Why Vertical is the New Film
+              </h3>
+              <p class="blog-excerpt">
+                The vertical format isn't a limitation. It's the most intimate
+                frame ever invented. Here's how to treat it with the reverence
+                of cinema.
+              </p>
+              <a
+                href="Pages/blog-cinematic-vertical-video.html"
+                class="blog-read-more"
+                >Read article
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-item reveal-up">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&amp;w=800&amp;h=520&amp;fit=crop"
+                alt="Code editor on a dark screen"
+                width="800"
+                height="520"
+                loading="lazy"
+              />
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-cat">Web development</span
+                ><span class="blog-date">Mar 2026</span>
+              </div>
+              <h3 class="blog-title">
+                Web Performance in 2026: The Only Metric That Actually Matters
+              </h3>
+              <p class="blog-excerpt">
+                Speed is a first impression. Every 100ms delay costs
+                conversions. This is how I architect sites that load before
+                attention spans run out.
+              </p>
+              <a
+                href="Pages/blog-web-performance-2026.html"
+                class="blog-read-more"
+                >Read article
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-item reveal-up">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&amp;w=800&amp;h=520&amp;fit=crop"
+                alt="Color grading workstation"
+                width="800"
+                height="520"
+                loading="lazy"
+              />
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-cat">Color science</span
+                ><span class="blog-date">Feb 2026</span>
+              </div>
+              <h3 class="blog-title">
+                My Color Grading Philosophy: Why Less Saturation Creates More
+                Impact
+              </h3>
+              <p class="blog-excerpt">
+                Cinematic color isn't about vibrance, it's about restraint. How
+                desaturated shadows, lifted blacks, and precise skin tones stop
+                thumbs mid-scroll.
+              </p>
+              <a
+                href="Pages/blog-color-grading-restraint.html"
+                class="blog-read-more"
+                >Read article
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section id="pricing" class="pricing-section" aria-label="Pricing">
+        <div class="section-header pricing-header-center">
+          <h2 class="section-title reveal-up">Simple<br />investment.</h2>
+          <p class="section-subtitle reveal-up">
+            No hidden fees. No surprises. Every package includes revisions and
+            post-delivery support.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card reveal-up">
+            <div class="pricing-plan-name">Essential</div>
+            <div class="pricing-amount"><sup>$</sup>80</div>
+            <div class="pricing-period">Per video edit, starting from</div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li class="pricing-feature included">9:16 cinematic edit</li>
+              <li class="pricing-feature included">Basic color grade</li>
+              <li class="pricing-feature included">Sound sync &amp; music</li>
+              <li class="pricing-feature included">2 revision rounds</li>
+              <li class="pricing-feature included">3-5 day delivery</li>
+              <li class="pricing-feature included">Source files</li>
+              <li class="pricing-feature excluded">Custom LUT package</li>
+              <li class="pricing-feature excluded">Motion graphics</li>
+              <li class="pricing-feature excluded">Rush delivery</li>
+            </ul>
+            <a href="Pages/contact.html?package=essential" class="pricing-cta"
+              >Get started</a
+            >
+          </div>
+
+          <div class="pricing-card featured reveal-up">
+            <div class="pricing-badge">Most booked</div>
+            <div class="pricing-plan-name">Professional</div>
+            <div class="pricing-amount"><sup>$</sup>200</div>
+            <div class="pricing-period">Per video edit, full package</div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li class="pricing-feature included">Cinematic 9:16 edit</li>
+              <li class="pricing-feature included">Advanced color grading</li>
+              <li class="pricing-feature included">Full sound design</li>
+              <li class="pricing-feature included">Unlimited revisions</li>
+              <li class="pricing-feature included">2-3 day delivery</li>
+              <li class="pricing-feature included">Source files + LUTs</li>
+              <li class="pricing-feature included">Custom motion graphics</li>
+              <li class="pricing-feature included">Thumbnail design</li>
+              <li class="pricing-feature excluded">Priority queue</li>
+            </ul>
+            <a
+              href="Pages/contact.html?package=professional"
+              class="pricing-cta"
+              >Get started</a
+            >
+          </div>
+
+          <div class="pricing-card reveal-up">
+            <div class="pricing-plan-name">Elite</div>
+            <div class="pricing-amount"><sup>$</sup>500</div>
+            <div class="pricing-period">Monthly retainer</div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li class="pricing-feature included">8 edits per month</li>
+              <li class="pricing-feature included">Cinematic grade</li>
+              <li class="pricing-feature included">Full audio production</li>
+              <li class="pricing-feature included">Unlimited revisions</li>
+              <li class="pricing-feature included">24h rush delivery</li>
+              <li class="pricing-feature included">Full asset library</li>
+              <li class="pricing-feature included">Motion graphics</li>
+              <li class="pricing-feature included">Thumbnails included</li>
+              <li class="pricing-feature included">Priority queue</li>
+            </ul>
+            <a href="Pages/contact.html?package=elite" class="pricing-cta"
+              >Get started</a
+            >
+          </div>
+        </div>
+
+        <p class="pricing-note">
+          Web development is quoted separately based on scope.
+          <a href="Pages/contact.html?topic=custom-quote"
+            >Request a custom quote</a
+          >
+        </p>
+      </section>
+
+      <!-- FAQ -->
+      <section
+        id="faq"
+        class="faq-section"
+        aria-label="Frequently asked questions"
+      >
+        <div class="faq-layout">
+          <div class="faq-left">
+            <h2 class="section-title">Got<br />questions?</h2>
+            <div class="faq-cta-box">
+              <p class="faq-cta-text">
+                Can't find your answer? Let's talk directly.
+              </p>
+              <a href="mailto:hello@xavier.com" class="faq-cta-link"
+                >Send a message
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+              ></a>
+            </div>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a1"
+                  id="faq-q1"
+                >
+                  How long does a typical video edit take?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a1"
+                role="region"
+                aria-labelledby="faq-q1"
+              >
+                <div class="faq-answer-inner">
+                  Standard 9:16 edits take 2-5 business days depending on
+                  complexity. Simple cuts and reels: 2 days. Complex cinematic
+                  edits with motion graphics: 4-5 days. Rush delivery (24h) is
+                  available on the Elite package or as an add-on. I communicate
+                  timelines upfront and don't miss deadlines.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a2"
+                  id="faq-q2"
+                >
+                  What format do you need my raw footage in?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a2"
+                role="region"
+                aria-labelledby="faq-q2"
+              >
+                <div class="faq-answer-inner">
+                  I accept any format: MP4, MOV, MXF, BRAW, ProRes, R3D, and
+                  more. Higher quality footage produces better results, but I
+                  can work with smartphone footage too. For web projects, you
+                  send brand assets, copy, and any design references, and I
+                  handle the rest.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a3"
+                  id="faq-q3"
+                >
+                  How many revisions are included?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a3"
+                role="region"
+                aria-labelledby="faq-q3"
+              >
+                <div class="faq-answer-inner">
+                  Essential: 2 revision rounds. Professional and Elite:
+                  unlimited revisions. In practice, most clients are happy after
+                  1-2 rounds because discovery means I understand your vision
+                  before I begin.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a4"
+                  id="faq-q4"
+                >
+                  Do you work with international clients?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a4"
+                role="region"
+                aria-labelledby="faq-q4"
+              >
+                <div class="faq-answer-inner">
+                  Yes. 90% of my clients are international: USA, UK, UAE,
+                  Canada, Australia, and more. I work across time zones and
+                  communicate in clear, professional English. Payments are
+                  accepted via PayPal, Wise, Binance, and bank transfer.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a5"
+                  id="faq-q5"
+                >
+                  What makes your web work different from page builders?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a5"
+                role="region"
+                aria-labelledby="faq-q5"
+              >
+                <div class="faq-answer-inner">
+                  Page builders (Webflow, Wix, WordPress) tend to produce
+                  heavier, slower, more generic sites. My hand-coded approach
+                  delivers sub-2-second load times, custom animation, full
+                  design flexibility, and code you own.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a6"
+                  id="faq-q6"
+                >
+                  Can you handle ongoing monthly work?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a6"
+                role="region"
+                aria-labelledby="faq-q6"
+              >
+                <div class="faq-answer-inner">
+                  Yes. The Elite monthly retainer is designed for this: 8 edits
+                  per month plus unlimited thumbnails and basic web updates.
+                  Retainer clients get priority scheduling and the best rates.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-a7"
+                  id="faq-q7"
+                >
+                  What payment methods do you accept?<span
+                    class="faq-icon"
+                    aria-hidden="true"
+                    ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" /></svg
+                  ></span>
+                </button>
+              </h3>
+              <div
+                class="faq-answer"
+                id="faq-a7"
+                role="region"
+                aria-labelledby="faq-q7"
+              >
+                <div class="faq-answer-inner">
+                  PayPal, Wise (best for international), Binance USDT, and
+                  direct bank transfer. New clients pay a 50% upfront deposit
+                  before work begins. Repeat clients get invoice-on-delivery
+                  terms. All pricing is in USD.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-label="Contact Xavier">
+        <div class="contact-layout">
+          <div class="contact-left">
+            <h2 class="section-title">Let's build<br />something.</h2>
+            <p class="contact-intro">
+              Tell me about your project and what success looks like. I
+              typically reply within 24 hours.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-info-label">Email</span
+                  ><span class="contact-info-value"
+                    ><a href="mailto:itxme204@gmail.com"
+                      >itxme204@gmail.com</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-info-label">Location</span
+                  ><span class="contact-info-value"
+                    >Lahore, Pakistan. Available worldwide.</span
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-info-label">Availability</span
+                  ><span class="contact-info-value"
+                    >Currently accepting new projects</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a
+                href="https://x.com/xavierstudio"
+                class="social-link"
+                aria-label="X (Twitter)"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/alixavier.dev"
+                class="social-link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+              ></a>
+              <a
+                href="https://www.youtube.com/@xavierstudio"
+                class="social-link"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                  />
+                  <polygon
+                    points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/xavier-studio"
+                class="social-link"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" /></svg
+              ></a>
+              <a
+                href="https://www.tiktok.com/@xavierstudio"
+                class="social-link"
+                aria-label="TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg
+              ></a>
+              <a
+                href="https://www.behance.net/xavierstudio"
+                class="social-link"
+                aria-label="Behance"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <path d="M1 6h10.5a4 4 0 0 1 0 8H1V6z" />
+                  <path d="M1 14h11.5a4 4 0 0 1 0 8H1v-8z" />
+                  <path d="M14 8h8M14 16h8M16 6a4 4 0 0 0 6 0" /></svg
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-right reveal-up">
+            <!-- Set your Formspree ID in data-endpoint (https://formspree.io/f/XXXXXXXX). Until then the form opens the visitor's email app. -->
+            <form
+              class="contact-form"
+              id="contact-form"
+              novalidate
+              data-endpoint="https://formspree.io/f/xnjwvwyy"
+              data-email="itxme204@gmail.com"
+            >
+              <input type="hidden" id="intent" name="intent" value="" />
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                class="form-honeypot"
+                aria-hidden="true"
+              />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Your name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="John Doe"
+                    autocomplete="name"
+                    requiredz
+                    aria-describedby="err-name"
+                  />
+                  <span class="form-error" id="err-name" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="itxme204@gmail.com"
+                    autocomplete="email"
+                    required
+                    aria-describedby="err-email"
+                  />
+                  <span class="form-error" id="err-email" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="service">Service needed</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="">Select a service...</option>
+                  <option value="video">Cinematic 9:16 video editing</option>
+                  <option value="web">
+                    Web architecture &amp; development
+                  </option>
+                  <option value="branding">
+                    Visual branding &amp; identity
+                  </option>
+                  <option value="motion">Motion design &amp; animation</option>
+                  <option value="landing">Landing page design</option>
+                  <option value="strategy">Content strategy</option>
+                  <option value="retainer">Monthly Elite retainer</option>
+                  <option value="other">Other / multiple services</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="budget">Budget range</label>
+                  <select id="budget" name="budget" class="form-select">
+                    <option value="">Select budget...</option>
+                    <option value="under200">Under $200</option>
+                    <option value="200-500">$200 - $500</option>
+                    <option value="500-1000">$500 - $1,000</option>
+                    <option value="1000-5000">$1,000 - $5,000</option>
+                    <option value="5000+">$5,000+</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="timeline">Timeline</label>
+                  <select id="timeline" name="timeline" class="form-select">
+                    <option value="">Select timeline...</option>
+                    <option value="urgent">Urgent (1-3 days)</option>
+                    <option value="normal">Normal (1-2 weeks)</option>
+                    <option value="flexible">Flexible (2-4 weeks)</option>
+                    <option value="longterm">Long-term project</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Project details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  required
+                  aria-describedby="err-message"
+                  placeholder="What do you need, what's your vision, and what does success look like?"
+                ></textarea>
+                <span class="form-error" id="err-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="form-submit magnetic">
+                <span>Send message</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+
+              <p
+                id="form-success"
+                class="form-status form-status--ok"
+                role="status"
+                hidden
+              >
+                Message sent. I'll reply within 24 hours.
+              </p>
+              <p
+                id="form-fail"
+                class="form-status form-status--err"
+                role="alert"
+                hidden
+              >
+                Couldn't send that. Please email
+                <a href="mailto:itxme204@gmail.com">itxme204@gmail.com</a>
+                directly.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" aria-label="Footer">
+      <div class="footer-cta-banner">
+        <h2 class="footer-cta-title">Let's build<br />the future.</h2>
+        <div class="footer-cta-actions">
+          <a href="mailto:hello@xavier.com" class="btn-primary magnetic">
+            <span>Start a project</span>
+            <svg
+              class="btn-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M2 12L12 2M12 2H5M12 2V9" />
+            </svg>
+          </a>
+          <a href="Pages/work.html" class="btn-secondary magnetic"
+            ><span>View portfolio</span></a
+          >
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">XAVIER<span>.</span></div>
+          <p class="footer-tagline">
+            Digital architect and cinematic editor. Web experiences and video
+            edits that go beyond the ordinary. Based in Pakistan, available
+            worldwide.
+          </p>
+          <form class="footer-newsletter" id="newsletter-form" novalidate>
+            <label class="sr-only" for="newsletter-email"
+              >Newsletter email</label
+            >
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              class="footer-newsletter-input"
+              placeholder="Your email address"
+              autocomplete="email"
+            />
+            <button type="submit" class="footer-newsletter-btn">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-links">
+            <a href="Pages/services.html#web-architecture" class="footer-link"
+              >Web Architecture</a
+            >
+            <a href="Pages/services.html#cinematic-editing" class="footer-link"
+              >Cinematic 9:16 Editing</a
+            >
+            <a href="Pages/services.html#visual-branding" class="footer-link"
+              >Visual Branding</a
+            >
+            <a href="Pages/services.html#motion-design" class="footer-link"
+              >Motion Design</a
+            >
+            <a href="Pages/services.html#landing-pages" class="footer-link"
+              >Landing Pages</a
+            >
+            <a href="Pages/services.html#content-strategy" class="footer-link"
+              >Content Strategy</a
+            >
+            <a href="Pages/services.html#monthly-retainer" class="footer-link"
+              >Monthly Retainer</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <div class="footer-links">
+            <a href="Pages/about.html" class="footer-link">About Xavier</a>
+            <a href="Pages/work.html" class="footer-link">Portfolio</a>
+            <a href="Pages/process.html" class="footer-link">Process</a>
+            <a href="Pages/clients.html" class="footer-link">Testimonials</a>
+            <a href="Pages/case-studies.html" class="footer-link"
+              >Case Studies</a
+            >
+            <a href="Pages/blog.html" class="footer-link">Blog</a>
+            <a href="Pages/contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <div class="footer-links">
+            <a
+              href="https://www.instagram.com/alixavier.dev"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            <a
+              href="https://www.youtube.com/@alixavier.dev"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+            <a
+              href="https://www.tiktok.com/@alixavier.dev"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TikTok</a
+            >
+            <a
+              href="https://www.linkedin.com/in/kashan-ali-669154408"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.behance.net/alixavier.dev"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Behance</a
+            >
+            <a
+              href="https://dribbble.com/alixavier.dev"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dribbble</a
+            >
+            <a href="mailto:itxme204@gmail.com" class="footer-link">Email me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wordmark is stretched to the full width with SVG textLength, so it fits any screen -->
+      <svg
+        class="footer-wordmark"
+        viewBox="0 0 1000 250"
+        role="img"
+        aria-label="Xavier"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <text x="0" y="232" textLength="1000" lengthAdjust="spacingAndGlyphs">
+          XAVIER.
+        </text>
+      </svg>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Xavier Services. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="Pages/privacy.html" class="footer-bottom-link"
+            >Privacy Policy</a
+          >
+          <a href="Pages/terms.html" class="footer-bottom-link"
+            >Terms of Service</a
+          >
+          <a href="Pages/cookies.html" class="footer-bottom-link"
+            >Cookie Policy</a
+          >
+        </div>
+        <a href="#top" class="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Libraries (all optional: the site still works if any fail to load) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/motion@11.18.2/dist/motion.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Contact | Xavier</title>
+    <meta
+      name="description"
+      content="Start a project with Xavier. Tell me what you need and I will reply within 24 hours."
+    />
+    <meta name="theme-color" content="#0c0b0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact | Xavier" />
+    <meta
+      property="og:description"
+      content="Start a project with Xavier. Tell me what you need and I will reply within 24 hours."
+    />
+    <meta property="og:image" content="../assets/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+  </head>
+  <body class="subpage" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="cursor" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+    <div id="cursor-label" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div id="progress-bar" aria-hidden="true"></div>
+
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo" aria-label="Xavier - Home"
+        >XAVIER<span>.</span></a
+      >
+      <div class="nav-links">
+        <a href="about.html" class="nav-link" data-text="About">About</a>
+        <a href="work.html" class="nav-link" data-text="Work">Work</a>
+        <a href="services.html" class="nav-link" data-text="Services"
+          >Services</a
+        >
+        <a href="clients.html" class="nav-link" data-text="Clients">Clients</a>
+        <a href="contact.html" class="nav-link" data-text="Contact">Contact</a>
+        <a href="contact.html?intent=hire" class="nav-cta magnetic"
+          ><span>Hire me</span></a
+        >
+      </div>
+      <button
+        class="nav-hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <a href="about.html" class="mobile-menu-link">About</a>
+      <a href="work.html" class="mobile-menu-link">Work</a>
+      <a href="services.html" class="mobile-menu-link">Services</a>
+      <a href="clients.html" class="mobile-menu-link">Clients</a>
+      <a href="process.html" class="mobile-menu-link">Process</a>
+      <a href="contact.html" class="mobile-menu-link">Contact</a>
+      <a href="mailto:hello@xavier.com" class="mobile-menu-mail"
+        >hello@xavier.com</a
+      >
+    </div>
+
+    <main id="main" class="page-main">
+      <header class="page-hero">
+        <span class="page-kicker">Contact</span>
+        <h1 class="page-title">Let's build<br />something.</h1>
+        <p class="page-lead">
+          Tell me about your project and what success looks like. I usually
+          reply within 24 hours.
+        </p>
+      </header>
+      <section class="page-section">
+        <div class="contact-page-grid">
+          <aside class="contact-panel reveal-up">
+            <h2>Direct line</h2>
+            <p>
+              Prefer email? Write to
+              <a href="mailto:hello@xavier.com" class="text-gold"
+                >hello@xavier.com</a
+              >.
+            </p>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div>
+                  <span class="contact-info-label">Location</span
+                  ><span class="contact-info-value"
+                    >Lahore, Pakistan. Available worldwide.</span
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div>
+                  <span class="contact-info-label">Availability</span
+                  ><span class="contact-info-value"
+                    >Currently accepting new projects</span
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div>
+                  <span class="contact-info-label">Reply time</span
+                  ><span class="contact-info-value">Within 24 hours</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-row">
+              <a
+                href="https://www.instagram.com/alixavier.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                >Instagram</a
+              >
+              <a
+                href="https://www.youtube.com/@xavierstudio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                >YouTube</a
+              >
+              <a
+                href="https://www.linkedin.com/in/xavier-studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                >LinkedIn</a
+              >
+            </div>
+          </aside>
+          <form
+            class="contact-form reveal-up"
+            id="contact-form"
+            novalidate
+            data-endpoint="https://formspree.io/f/your-form-id"
+            data-email="hello@xavier.com"
+          >
+            <input type="hidden" id="intent" name="intent" value="" />
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              class="form-honeypot"
+              aria-hidden="true"
+            />
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Your name</label
+                ><input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="John Doe"
+                  autocomplete="name"
+                  required
+                  aria-describedby="err-name"
+                /><span class="form-error" id="err-name" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email address</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="hello@yourdomain.com"
+                  autocomplete="email"
+                  required
+                  aria-describedby="err-email"
+                /><span class="form-error" id="err-email" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Service needed</label>
+              <select id="service" name="service" class="form-select">
+                <option value="">Select a service...</option>
+                <option value="video">Cinematic 9:16 video editing</option>
+                <option value="web">Web architecture &amp; development</option>
+                <option value="branding">Visual branding &amp; identity</option>
+                <option value="motion">Motion design &amp; animation</option>
+                <option value="landing">Landing page design</option>
+                <option value="strategy">Content strategy</option>
+                <option value="retainer">Monthly Elite retainer</option>
+                <option value="other">Other / multiple services</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="budget">Budget range</label
+                ><select id="budget" name="budget" class="form-select">
+                  <option value="">Select budget...</option>
+                  <option value="under200">Under $200</option>
+                  <option value="200-500">$200 - $500</option>
+                  <option value="500-1000">$500 - $1,000</option>
+                  <option value="1000-5000">$1,000 - $5,000</option>
+                  <option value="5000+">$5,000+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="timeline">Timeline</label
+                ><select id="timeline" name="timeline" class="form-select">
+                  <option value="">Select timeline...</option>
+                  <option value="urgent">Urgent (1-3 days)</option>
+                  <option value="normal">Normal (1-2 weeks)</option>
+                  <option value="flexible">Flexible (2-4 weeks)</option>
+                  <option value="longterm">Long-term project</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Project details</label
+              ><textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                required
+                aria-describedby="err-message"
+                placeholder="What do you need, what's your vision, and what does success look like?"
+              ></textarea
+              ><span class="form-error" id="err-message" role="alert"></span>
+            </div>
+            <button type="submit" class="form-submit magnetic">
+              <span>Send message</span
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <p
+              id="form-success"
+              class="form-status form-status--ok"
+              role="status"
+              hidden
+            >
+              Message sent. I'll reply within 24 hours.
+            </p>
+            <p
+              id="form-fail"
+              class="form-status form-status--err"
+              role="alert"
+              hidden
+            >
+              Couldn't send that. Please email
+              <a href="mailto:hello@xavier.com">hello@xavier.com</a> directly.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" aria-label="Footer">
+      <div class="footer-cta-banner">
+        <h2 class="footer-cta-title">Let's build<br />the future.</h2>
+        <div class="footer-cta-actions">
+          <a href="contact.html" class="btn-primary magnetic"
+            ><span>Start a project</span
+            ><svg
+              class="btn-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M2 12L12 2M12 2H5M12 2V9" /></svg
+          ></a>
+          <a href="work.html" class="btn-secondary magnetic"
+            ><span>View portfolio</span></a
+          >
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">XAVIER<span>.</span></div>
+          <p class="footer-tagline">
+            Digital architect and cinematic editor. Web experiences and video
+            edits that go beyond the ordinary. Based in Pakistan, available
+            worldwide.
+          </p>
+          <form class="footer-newsletter" id="newsletter-form" novalidate>
+            <label class="sr-only" for="newsletter-email"
+              >Newsletter email</label
+            >
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              class="footer-newsletter-input"
+              placeholder="Your email address"
+              autocomplete="email"
+            />
+            <button type="submit" class="footer-newsletter-btn">
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-links">
+            <a href="services.html#web-architecture" class="footer-link"
+              >Web Architecture</a
+            >
+            <a href="services.html#cinematic-editing" class="footer-link"
+              >Cinematic 9:16 Editing</a
+            >
+            <a href="services.html#visual-branding" class="footer-link"
+              >Visual Branding</a
+            >
+            <a href="services.html#motion-design" class="footer-link"
+              >Motion Design</a
+            >
+            <a href="services.html#landing-pages" class="footer-link"
+              >Landing Pages</a
+            >
+            <a href="services.html#content-strategy" class="footer-link"
+              >Content Strategy</a
+            >
+            <a href="services.html#monthly-retainer" class="footer-link"
+              >Monthly Retainer</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Xavier</a>
+            <a href="work.html" class="footer-link">Portfolio</a>
+            <a href="process.html" class="footer-link">Process</a>
+            <a href="clients.html" class="footer-link">Testimonials</a>
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="blog.html" class="footer-link">Blog</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <div class="footer-links">
+            <a
+              href="https://www.instagram.com/xavier.studio"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            <a
+              href="https://www.youtube.com/@xavierstudio"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+            <a
+              href="https://www.tiktok.com/@xavierstudio"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TikTok</a
+            >
+            <a
+              href="https://www.linkedin.com/in/xavier-studio"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.behance.net/xavierstudio"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Behance</a
+            >
+            <a
+              href="https://dribbble.com/xavierstudio"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dribbble</a
+            >
+            <a href="mailto:hello@xavier.com" class="footer-link">Email me</a>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="footer-wordmark"
+        viewBox="0 0 1000 250"
+        role="img"
+        aria-label="Xavier"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <text x="0" y="232" textLength="1000" lengthAdjust="spacingAndGlyphs">
+          XAVIER.
+        </text>
+      </svg>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Xavier Services. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" class="footer-bottom-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-bottom-link">Terms of Service</a>
+          <a href="cookies.html" class="footer-bottom-link">Cookie Policy</a>
+        </div>
+        <a href="#top" class="back-to-top" aria-label="Back to top"
+          ><svg viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" /></svg
+        ></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/motion@11.18.2/dist/motion.js"
+      defer
+    ></script>
+    <script src="../script.js" defer></script>
+  </body>
+</html>
